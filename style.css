@@ -6,9 +6,12 @@
     --bg-color: #ffffff;
     --light-bg: #f9f9f9;
     --border-color: #e0e0e0;
-    --rank-1-color: #d4af37; /* Gold */
-    --rank-2-color: #c0c0c0; /* Silver */
-    --rank-3-color: #cd7f32; /* Bronze */
+    --rank-1-color: #d4af37;
+    /* Gold */
+    --rank-2-color: #c0c0c0;
+    /* Silver */
+    --rank-3-color: #cd7f32;
+    /* Bronze */
     --max-width: 800px;
     --spacing-unit: 16px;
 }
@@ -52,6 +55,20 @@ img {
     font-size: 24px;
     margin-bottom: 24px;
     line-height: 1.4;
+}
+
+.hero-logos {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.hero-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 12px;
 }
 
 .lead {
@@ -100,7 +117,8 @@ img {
     border-radius: 8px;
     overflow: hidden;
     position: relative;
-    padding-top: 40px; /* Space for badge */
+    padding-top: 40px;
+    /* Space for badge */
 }
 
 .rank-badge {
@@ -114,14 +132,29 @@ img {
     border-bottom-right-radius: 8px;
 }
 
-.rank-1 .rank-badge { background-color: var(--rank-1-color); }
-.rank-1 h3.rank-title { border-bottom: 2px solid var(--rank-1-color); }
+.rank-1 .rank-badge {
+    background-color: var(--rank-1-color);
+}
 
-.rank-2 .rank-badge { background-color: var(--rank-2-color); }
-.rank-2 h3.rank-title { border-bottom: 2px solid var(--rank-2-color); }
+.rank-1 h3.rank-title {
+    border-bottom: 2px solid var(--rank-1-color);
+}
 
-.rank-3 .rank-badge { background-color: var(--rank-3-color); }
-.rank-3 h3.rank-title { border-bottom: 2px solid var(--rank-3-color); }
+.rank-2 .rank-badge {
+    background-color: var(--rank-2-color);
+}
+
+.rank-2 h3.rank-title {
+    border-bottom: 2px solid var(--rank-2-color);
+}
+
+.rank-3 .rank-badge {
+    background-color: var(--rank-3-color);
+}
+
+.rank-3 h3.rank-title {
+    border-bottom: 2px solid var(--rank-3-color);
+}
 
 .rank-title {
     font-size: 20px;
@@ -170,7 +203,8 @@ img {
 .comparison-table {
     width: 100%;
     border-collapse: collapse;
-    min-width: 600px; /* Ensure table doesn't get too squashed */
+    min-width: 600px;
+    /* Ensure table doesn't get too squashed */
 }
 
 .comparison-table th,
@@ -198,7 +232,8 @@ img {
 
 .highlight {
     font-weight: bold;
-    color: #d32f2f; /* Red for emphasis in table */
+    color: #d32f2f;
+    /* Red for emphasis in table */
     background: #fff3e0;
     padding: 2px 5px;
     border-radius: 4px;
@@ -206,7 +241,8 @@ img {
 
 /* Summary Section */
 .summary-section {
-    background-color: #f0f8ff; /* Light blue background for summary */
+    background-color: #f0f8ff;
+    /* Light blue background for summary */
     padding: 30px;
     border-radius: 8px;
 }
@@ -238,7 +274,8 @@ img {
 
 /* Bold Emphasis */
 strong {
-    background: linear-gradient(transparent 60%, #fff176 60%); /* Highlighter effect */
+    background: linear-gradient(transparent 60%, #fff176 60%);
+    /* Highlighter effect */
     font-weight: bold;
 }
 
