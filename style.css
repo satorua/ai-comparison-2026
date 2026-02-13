@@ -1,0 +1,258 @@
+/* Base Styles */
+:root {
+    --primary-color: #333333;
+    --secondary-color: #666666;
+    --accent-color: #007bff;
+    --bg-color: #ffffff;
+    --light-bg: #f9f9f9;
+    --border-color: #e0e0e0;
+    --rank-1-color: #d4af37; /* Gold */
+    --rank-2-color: #c0c0c0; /* Silver */
+    --rank-3-color: #cd7f32; /* Bronze */
+    --max-width: 800px;
+    --spacing-unit: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-unit);
+}
+
+/* Header */
+.header {
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin-bottom: 24px;
+    line-height: 1.4;
+}
+
+.lead {
+    font-size: 16px;
+    color: var(--secondary-color);
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 22px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 24px;
+}
+
+/* Criteria List */
+.criteria-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.criteria-item {
+    background-color: var(--light-bg);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.criteria-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+}
+
+/* Ranking Items */
+.ranking-item {
+    margin-bottom: 40px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 40px; /* Space for badge */
+}
+
+.rank-badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom-right-radius: 8px;
+}
+
+.rank-1 .rank-badge { background-color: var(--rank-1-color); }
+.rank-1 h3.rank-title { border-bottom: 2px solid var(--rank-1-color); }
+
+.rank-2 .rank-badge { background-color: var(--rank-2-color); }
+.rank-2 h3.rank-title { border-bottom: 2px solid var(--rank-2-color); }
+
+.rank-3 .rank-badge { background-color: var(--rank-3-color); }
+.rank-3 h3.rank-title { border-bottom: 2px solid var(--rank-3-color); }
+
+.rank-title {
+    font-size: 20px;
+    margin: 0 20px 20px;
+    padding-bottom: 10px;
+    line-height: 1.4;
+}
+
+.rank-subtitle {
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--secondary-color);
+    display: block;
+    margin-top: 5px;
+}
+
+.rank-content {
+    padding: 0 20px 20px;
+}
+
+.feature-list dt {
+    font-weight: bold;
+    margin-top: 15px;
+    color: var(--accent-color);
+    margin-bottom: 5px;
+}
+
+.feature-list dt:first-child {
+    margin-top: 0;
+}
+
+.feature-list dd {
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+/* Comparison Table */
+.table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Ensure table doesn't get too squashed */
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+    vertical-align: top;
+}
+
+.comparison-table th {
+    background-color: var(--light-bg);
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.comparison-table tr:last-child td {
+    border-bottom: none;
+}
+
+.tool-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #d32f2f; /* Red for emphasis in table */
+    background: #fff3e0;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+/* Summary Section */
+.summary-section {
+    background-color: #f0f8ff; /* Light blue background for summary */
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.summary-list {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.summary-list li {
+    margin-bottom: 10px;
+}
+
+.methodology {
+    color: var(--secondary-color);
+    font-size: 12px;
+    margin-top: 20px;
+    line-height: 1.4;
+}
+
+/* Footer */
+.footer {
+    padding: 20px 0;
+    text-align: center;
+    color: var(--secondary-color);
+    border-top: 1px solid var(--border-color);
+    font-size: 12px;
+}
+
+/* Bold Emphasis */
+strong {
+    background: linear-gradient(transparent 60%, #fff176 60%); /* Highlighter effect */
+    font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    .header h1 {
+        font-size: 32px;
+    }
+
+    .criteria-list {
+        flex-direction: row;
+    }
+
+    .criteria-item {
+        flex: 1;
+    }
+}
