@@ -57,19 +57,6 @@ img {
     line-height: 1.4;
 }
 
-.hero-logos {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    margin-bottom: 24px;
-}
-
-.hero-logo {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-    border-radius: 12px;
-}
 
 .lead {
     font-size: 16px;
